@@ -9,3 +9,23 @@
     font-family: 'Oswald';
     letter-spacing: 2px;
 }
+
+nav{
+    display: none;
+}
+
+nav.active{
+    display: flex;
+}
+
+@media (width>=1024px){
+    nav a:hover{
+        color:#9c6464;
+        text-shadow: 1px 1px 3px #9b7878;
+    }
+    
+    nav button:hover{
+        color: #4ec0f4;
+    }
+}
+
