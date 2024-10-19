@@ -72,6 +72,6 @@ function Header() {
     );
 }
 function showMenu() {
-    $("nav")[0].classList.toggle("active");
+    document.getElementsByTagName("nav")[0].classList.toggle("active");
 }
 export default Header;
