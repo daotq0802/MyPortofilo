@@ -1,3 +1,5 @@
+import MyLogo from '../../public/MyLogo.png'
+
 function Header() {
     return (
         <>
@@ -7,7 +9,7 @@ function Header() {
                                         max-md:justify-around items-center h-20 py-2"
             >
                 <img
-                    src="public/MyLogo.png"
+                    src={MyLogo}
                     alt="My Logo"
                     className="max-sm:w-16 max-md:w-20 md:w-1/12 h-full cursor-pointer"
                 />
