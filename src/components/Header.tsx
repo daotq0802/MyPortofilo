@@ -1,12 +1,12 @@
-import MyLogo from '../../public/MyLogo.png'
+import MyLogo from "../../public/MyLogo.png";
 
 function Header() {
     return (
         <>
             <header
                 className="w-full flex fixed 
-                                        md:justify-evenly md:shadow-sm md:shadow-slate-400
-                                        max-md:justify-around items-center h-20 py-2"
+                md:justify-evenly md:shadow-sm md:shadow-slate-400
+                max-md:justify-around items-center h-20 py-2"
             >
                 <img
                     src={MyLogo}
@@ -15,8 +15,8 @@ function Header() {
                 />
                 <nav
                     className="w-2/3  px-2 py-2 
-                                        md:flex md:gap-10 md:justify-evenly
-                                        max-md:animate-slideDown max-md:absolute max-md:bottom-0 max-md:flex-col max-md:border-t-2 max-md:gap-2 max-md:items-start"
+                    md:flex md:gap-10 md:justify-evenly
+                    max-md:animate-slideDown max-md:absolute max-md:bottom-0 max-md:flex-col max-md:border-t-2 max-md:gap-2 max-md:items-start"
                 >
                     <a
                         href="#"
@@ -72,6 +72,6 @@ function Header() {
     );
 }
 function showMenu() {
-    document.getElementsByTagName("nav")[0].classList.toggle("active");
+    $("nav")[0].classList.toggle("active");
 }
 export default Header;
