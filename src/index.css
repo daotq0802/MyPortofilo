@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald";
+    font-family: "Yellowtail", cursive;
     letter-spacing: 2px;
 }
 
@@ -26,5 +29,10 @@ nav.active {
 
     nav button:hover {
         color: #4ec0f4;
+    }
+
+    #seeMore:hover{
+        background-color: #779d8b;
+        box-shadow: 0 0 10px #779d8b;
     }
 }

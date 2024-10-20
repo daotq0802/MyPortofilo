@@ -1,5 +1,4 @@
-import MyLogo from "../../public/MyLogo.png";
-
+import MyLogo from "../assets/MyLogo.png";
 function Header() {
     return (
         <>
@@ -13,14 +12,15 @@ function Header() {
                     alt="My Logo"
                     className="max-sm:w-16 max-md:w-20 md:w-1/12 h-full cursor-pointer"
                 />
+
                 <nav
                     className="w-2/3  px-2 py-2 
                     md:flex md:gap-10 md:justify-evenly
                     max-md:animate-slideDown max-md:absolute max-md:bottom-0 max-md:flex-col max-md:border-t-2 max-md:gap-2 max-md:items-start"
                 >
-                    <a
-                        href="#"
-                        className="font-bold transition duration-500 py-2
+                    <a 
+                    href="/MyPortofilo/home"
+                        className="font-bold transition duration-500 py-2 px-5
                         max-lg:text-base
                         lg:text-xl
                         md:self-center"
@@ -28,8 +28,8 @@ function Header() {
                         Home
                     </a>
                     <a
-                        href="#"
-                        className="font-bold transition duration-500 py-2
+                        href="/MyPortofilo/about"
+                        className="font-bold transition duration-500 py-2 px-5
                         max-lg:text-base
                         lg:text-xl 
                         md:self-center"
@@ -37,8 +37,8 @@ function Header() {
                         About
                     </a>
                     <a
-                        href="#"
-                        className="font-bold transition duration-500 py-2
+                        href="/MyPortofilo/project"
+                        className="font-bold transition duration-500 py-2 px-5
                         max-lg:text-base
                         lg:text-xl 
                         md:self-center"
@@ -46,8 +46,8 @@ function Header() {
                         Project
                     </a>
                     <a
-                        href="#"
-                        className="font-bold transition duration-500 py-2 
+                        href="/MyPortofilo/contact"
+                        className="font-bold transition duration-500 py-2 px-5
                         max-lg:text-base 
                         lg:text-xl 
                         md:self-center"
@@ -65,7 +65,7 @@ function Header() {
                 </nav>
                 <i
                     onClick={showMenu}
-                    className="fa-solid fa-bars md:hidden max-md:inline-block text-3xl p-2.5"
+                    className="fa-solid fa-bars md:hidden max-md:inline-block text-3xl p-2.5 text-[#9d7979]"
                 ></i>
             </header>
         </>

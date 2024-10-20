@@ -19,13 +19,23 @@ export default {
                     },
                     "100%": {
                         opacity: 1,
-
                         transform: "translateY(100%)",
+                    },
+                },
+                slideLeft: {
+                    "0%": {
+                        opacity: 0,
+                        transform: "translateX(30%)",
+                    },
+                    "100%": {
+                        opacity: 1,
+                        transform: "translateX(0)",
                     },
                 },
             },
             animation: {
                 slideDown: "slideDown 1s ease forwards",
+                slideLeft: "slideLeft 2s ease forwards",
             },
         },
     },
