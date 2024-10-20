@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,25 +12,64 @@
     letter-spacing: 2px;
 }
 
-nav {
-    display: none;
+@keyframes closeNav {
+    0% {
+        opacity: 1;
+        left: 0;
+    }
+    100% {
+        opacity: 0;
+        left: -100%;
+    }
 }
 
-nav.active {
-    display: flex;
+@keyframes slideIconToLeft {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIconToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+@media (width<=767px) {
+    nav {
+        animation: closeNav 1s ease-in-out forwards;
+    }
+
+    nav.active {
+        animation: slideRight 1s ease-in-out forwards;
+    }
+
+    i {
+        animation: slideIconToLeft 1s ease-out forwards;
+    }
+
+    i.active {
+        animation: slideIconToRight 1s ease-in forwards;
+    }
 }
 
 @media (width>=1024px) {
     nav a:hover {
-        color: #9c6464;
-        text-shadow: 1px 1px 3px #9b7878;
+        color: #90d0b1;
+        text-shadow: 1.5px 1.5px 1px #000;
     }
 
     nav button:hover {
         color: #4ec0f4;
     }
 
-    #seeMore:hover{
+    #seeMore:hover {
         background-color: #779d8b;
         box-shadow: 0 0 10px #779d8b;
     }

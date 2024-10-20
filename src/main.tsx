@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Home from "./pages/Home.tsx";
-import Index from "./pages/Index.tsx";
+import Welcome from "./pages/Welcome.tsx";
 import Project from "./pages/Project.tsx";
 import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
@@ -11,7 +11,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
     {
         path: "/MyPortofilo/",
-        element: <Index />,
+        element: <Welcome />,
     },
     {
         path: "/MyPortofilo/home",

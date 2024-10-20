@@ -12,14 +12,14 @@ export default {
         },
         extend: {
             keyframes: {
-                slideDown: {
+                slideRight: {
                     "0%": {
                         opacity: 0,
-                        transform: "translateY(80%)",
+                        left: "-100%",
                     },
                     "100%": {
                         opacity: 1,
-                        transform: "translateY(100%)",
+                        left: "0",
                     },
                 },
                 slideLeft: {
@@ -34,7 +34,7 @@ export default {
                 },
             },
             animation: {
-                slideDown: "slideDown 1s ease forwards",
+                slideRight: "slideRight 1s ease forwards",
                 slideLeft: "slideLeft 2s ease forwards",
             },
         },
