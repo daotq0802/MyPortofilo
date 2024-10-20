@@ -33,7 +33,7 @@ export default function Index() {
                 </div>
                 <div className="welcome-content flex flex-col items-center relative w-full lg:ml-52 max-sm:gap-8 ">
                     <h1
-                        className="text-[120px] text-[#779d8b] lg:mr-96 lg:-mb-14 lg:animate-slideLeft
+                        className="text-[120px] text-[#779d8b] lg:mr-96 lg:-mb-14 lg:animate-slideLeft opacity-0
                         max-md:text-[80px] max-md:-mb-10
                         max-sm:text-[40px]"
                         style={{ animationDelay: "100ms" }}
@@ -41,8 +41,7 @@ export default function Index() {
                         Welcome to my
                     </h1>
                     <p
-                        className="font-[Oswald] font-bold text-[120px] text-white lg:mr-24  lg:-mb-4 tracking-[20px] lg:animate-slideLeft
-                        max-lg:m-0
+                        className="font-[Oswald] font-bold text-[120px] text-white lg:mr-24  lg:-mb-4 tracking-[20px] lg:animate-slideLeft opacity-0
                         max-md:text-[80px]
                         max-sm:text-[40px] "
                         style={{ animationDelay: "300ms" }}
@@ -51,8 +50,7 @@ export default function Index() {
                     </p>
                     <Link
                         to="/MyPortofilo/home"
-                        className="text-white font-[Oswald] text-3xl cursor-pointer lg:ml-[400px] bg-[#90d0b1] px-8 py-2 transition duration-500 lg:animate-slideRight
-                        max-lg:0
+                        className="text-white font-[Oswald] text-3xl cursor-pointer lg:ml-[400px] bg-[#90d0b1] px-8 py-2 transition duration-500 lg:animate-slideLeft opacity-0
                         max-md:text-2xl
                         max-sm:text-xl"
                         style={{ animationDelay: "500ms" }}

@@ -24,7 +24,6 @@ export default {
                 },
                 slideLeft: {
                     "0%": {
-                        opacity: 0,
                         transform: "translateX(30%)",
                     },
                     "100%": {

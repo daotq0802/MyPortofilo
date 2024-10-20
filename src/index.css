@@ -57,6 +57,11 @@
     i.active {
         animation: slideIconToRight 1s ease-in forwards;
     }
+
+    nav a.active{
+        color: #fff;
+        text-shadow: 1.5px 1.5px 1px #000;
+    }
 }
 
 @media (width>=1024px) {
@@ -67,6 +72,11 @@
 
     nav button:hover {
         color: #4ec0f4;
+    }
+
+    nav a.active{
+        color: #90d0b1;
+        text-shadow: 1.5px 1.5px 1px #000;
     }
 
     #seeMore:hover {

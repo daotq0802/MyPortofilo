@@ -14,7 +14,7 @@ function Home() {
                         className="absolute -bottom-80 -right-48"
                     />
                 </div>
-                <Header />
+                <Header page="Home" />
             </section>
         </>
     );
