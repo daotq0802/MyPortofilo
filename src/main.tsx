@@ -13,11 +13,11 @@ createRoot(document.getElementById("root")!).render(
     <StrictMode>
         <Router>
             <Routes>
-                <Route path="/MyPortofilo" element={<Index />} />
-                <Route path="/MyPortofilo/home" element={<Home />} />
-                <Route path="/MyPortofilo/about" element={<About />} />
-                <Route path="/MyPortofilo/project" element={<Project />} />
-                <Route path="/MyPortofilo/contact" element={<Contact />} />
+                <Route path="/" element={<Index />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/project" element={<Project />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
     </StrictMode>
