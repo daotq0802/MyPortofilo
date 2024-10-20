@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://daotq0802.github.io/MyPortofilo/",
+    "homepage": "https://daotq0802.github.io/MyPortofilo",
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
