@@ -6,32 +6,33 @@ import Index from "./pages/Index.tsx";
 import Project from "./pages/Project.tsx";
 import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
-import ErrorPage from "./pages/ErrorPage.tsx";
-let components;
-switch (window.location.pathname) {
-    case "/MyPortofilo":
-        components = <Index />;
-        break;
-    case "/MyPortofilo/":
-        components = <Index />;
-        break;
-    case "/MyPortofilo/home":
-        components = <Home />;
-        break;
-    case "/MyPortofilo/about":
-        components = <About />;
-        break;
-    case "/MyPortofilo/project":
-        components = <Project />;
-        break;
-    case "/MyPortofilo/contact":
-        components = <Contact />;
-        break;
-    default:
-        components = <ErrorPage />;
-}
+// import ErrorPage from "./pages/ErrorPage.tsx";
+import { createHashRouter, RouterProvider } from "react-router-dom";
+
+const router = createHashRouter([
+    {
+        path: "/",
+        element: <Index />,
+    },
+    {
+        path: "/MyPortofilo/home",
+        element: <Home />,
+    },
+    {
+        path: "/MyPortofilo/about",
+        element: <About />,
+    },
+    {
+        path: "/MyPortofilo/project",
+        element: <Project />,
+    },
+    {
+        path: "/MyPortofilo/contact",
+        element: <Contact />,
+    },
+]);
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        {components}
+        <RouterProvider router={router} />
     </StrictMode>
 );
