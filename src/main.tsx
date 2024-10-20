@@ -7,6 +7,7 @@ import Project from "./pages/Project.tsx";
 import Contact from "./pages/Contact.tsx";
 import About from "./pages/About.tsx";
 // import ErrorPage from "./pages/ErrorPage.tsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 const router = createHashRouter([
@@ -33,6 +34,11 @@ const router = createHashRouter([
 ]);
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <RouterProvider router={router} />
+        <Router>
+            <Routes>
+                <Route path="/MyPortofilo" element={<Index />} />
+                <Route path="/MyPortofilo/home" element={<Home />} />
+            </Routes>
+        </Router>
     </StrictMode>
 );
