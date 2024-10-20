@@ -9,7 +9,7 @@ import About from "./pages/About.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
 let components;
 switch (window.location.pathname) {
-    case "/MyPortofilo":
+    case "/MyPortofilo/":
         components = <Index />;
         break;
     case "/MyPortofilo/home":
