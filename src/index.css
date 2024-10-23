@@ -41,6 +41,13 @@
     }
 }
 
+@media (width<1024px) {
+    nav a.active {
+        color: #90d0b1;
+        text-shadow: 1.5px 1.5px 1px #000;
+    }
+}
+
 @media (width<=767px) {
     nav {
         animation: closeNav 1s ease-in-out forwards;
@@ -58,7 +65,7 @@
         animation: slideIconToRight 1s ease-in forwards;
     }
 
-    nav a.active{
+    nav a.active {
         color: #fff;
         text-shadow: 1.5px 1.5px 1px #000;
     }
@@ -74,7 +81,7 @@
         color: #4ec0f4;
     }
 
-    nav a.active{
+    nav a.active {
         color: #90d0b1;
         text-shadow: 1.5px 1.5px 1px #000;
     }
